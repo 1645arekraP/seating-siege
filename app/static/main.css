@@ -1,0 +1,89 @@
+body {
+    background-color: #121212;
+}
+
+.navbar.navbar-expand-lg.navbar-light {
+    background-color: rgba(255, 255, 255, 0.1);
+    
+}
+
+.navbar.navbar-expand-lg.navbar-light a {
+    color: #F2F2F2;
+}
+
+#logo{
+    color: #BB86FC;
+}
+
+.navbar.navbar-expand-lg.navbar-light a:hover {
+    color: white;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+
+.notification {
+    padding: 15px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+}
+
+.notification-header {
+    display: inline-block;
+    width: 100%;
+    color: #F2F2F2;
+    font-size: 17px;
+}
+
+#notification-icon {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #F2F2F2;
+    background-color: #BB86FC;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.notification-name {
+    display: inline-block;
+    padding-left: 5px
+}
+
+.notification-time {
+    display: inline-block;
+    float: right;
+}
+
+#message-sender {
+    color: #F2F2F2;
+    font-weight: 500;
+}
+
+#message-body {
+    color: #F2F2F2;
+}
+
+#nav-github {
+    font-size: 20px;
+    color: #F2F2F2;
+    cursor: pointer;
+}
+
+#nav-github:hover{
+    font-size: 20px;
+}
+
+.scaper-description.p {
+    color: #F2F2F2;
+}
+
+.scaper-description {
+    width: inherit;
+}
