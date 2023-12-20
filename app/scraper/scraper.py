@@ -56,16 +56,19 @@ class Scraper():
     def __scrapeAllCourses(self, phone: Phone) -> None:
         for course in self.__courses:
             if self.__hasOpenSeat(course):
-                phone.sendSMS("Has Open Spot")
+                if phone:
+                    phone.sendSMS("Has Open Spot")
                 self.__courses.remove(course)
                 print(self.__scrapeCourse(course))
 
             time.sleep(random.uniform(10, 15))
         time.sleep(random.uniform(30, 60)) # These might be an issue later idk
 
-    def start(self, phone: Phone) -> None:
-        phone.sendSMS("Starting...")
+    def start(self, phone: Phone = None) -> None:
+        if phone:
+            phone.sendSMS("Starting...")
         while self.__courses:
             self.__scrapeAllCourses(phone)
         print("Done")
-        phone.sendSMS("No courses left")
+        if phone:
+            phone.sendSMS("No courses left")
